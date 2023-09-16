@@ -5,7 +5,7 @@ const PORT = 4000
 
 app.use(express.json())
 
-const API_KEY = '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'
+const API_KEY = process.env.API
 
 app.use(cors({
   origin: 'http://localhost:3000'
